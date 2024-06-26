@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block contect %} 
+<div class="card-body">
+    <div class="small text-muted">
+      {{data.created_at|date:"Y F d"}}
+    </div>
+    <h2 class="card-title h4">{{data.title}}</h2>
+    <p class="card-text">{{ data.desc }}</p>
+
+    
+  </div>
+{% comment %} </div>
+  <h1>{{ data.title }}</h1>
+  <p>{{ data.desc }}</p>
+  <img src="{{ data.img.url }}" alt="{{ data.title }}" />
+  <p>Created at: {{ data.created_at|date:"Y F d" }}</p>
+  {% if data.deleted_at %}
+  <p>Deleted at: {{ data.deleted_at|date:"Y F d" }}</p>
+  {% endif %}
+</div>
+{% endfor %}  {% endcomment %}
+{% endblock contect %}
