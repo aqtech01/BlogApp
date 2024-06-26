@@ -19,10 +19,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-
+admin.site.site_header = "AQTECH Blog App"
+admin.site.site_title = "AQTECH"
+admin.site.index_title = "Welcome to AQTECH Blog Portal"
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("core.urls")),
+    path("admin/", admin.site.urls,name="admin"),
+    path("", include("core.urls")),     
 ]
 
 
