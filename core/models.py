@@ -11,3 +11,11 @@ class Blog(models.Model):
     
     def __str__(self):
         return self.title
+
+
+class Contact(models.Model):
+    email = models.EmailField(null=False,blank=False)
+    message = models.TextField(null=False,blank=False)
+
+    def __str__(self) :
+        return f"{self.email} {self.message[:30]}"
