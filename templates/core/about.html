@@ -1,2 +1,83 @@
-{% extends "base.html" %} {% block content %} This is about Page and every about
-will show here{% endblock content %}
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>About Us</h1>
+      <p class="lead">
+        Learn more about our company, our team, and our mission.
+      </p>
+    </div>
+  </div>
+
+  <!-- Company Information -->
+  <div class="row my-5">
+    <div class="col-md-6">
+      <h2>Our Company</h2>
+      <p>
+        We are a forward-thinking company dedicated to providing innovative
+        solutions to our clients. Our mission is to deliver high-quality
+        products and services that exceed expectations.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img
+        src="https://via.placeholder.com/500x300"
+        class="img-fluid"
+        alt="Our Company"
+      />
+    </div>
+  </div>
+
+  <!-- Team Members -->
+  <div class="row my-5">
+    <div class="col-12 text-center">
+      <h2>Meet Our Team</h2>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img
+        src="https://via.placeholder.com/150"
+        class="rounded-circle mb-3"
+        alt="Team Member 1"
+      />
+      <h5>John Doe</h5>
+      <p>CEO</p>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img
+        src="https://via.placeholder.com/150"
+        class="rounded-circle mb-3"
+        alt="Team Member 2"
+      />
+      <h5>Jane Smith</h5>
+      <p>CTO</p>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img
+        src="https://via.placeholder.com/150"
+        class="rounded-circle mb-3"
+        alt="Team Member 3"
+      />
+      <h5>Mike Johnson</h5>
+      <p>CFO</p>
+    </div>
+  </div>
+
+  <!-- Company History -->
+  <div class="row my-5">
+    <div class="col-12 text-center">
+      <h2>Our History</h2>
+    </div>
+    <div class="col-12">
+      <p>
+        Founded in 2010, our company has grown from a small startup to a leading
+        provider in the industry. We have achieved numerous milestones and
+        continue to strive for excellence in everything we do.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
