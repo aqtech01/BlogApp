@@ -11,7 +11,8 @@ def home(request):
 
     return render(request, "core/index.html",context)
 def blog_details(request, id):
-    data = get_object_or_404(Blog, pk=id)
+    data = Blog.objects.get(id=id)
+    print(data,id,data.desc)
     context = {
         "data": data,
         "title": "Blog Details",
